@@ -16,6 +16,7 @@ public class MainPageTests extends TestBase {
     @DisplayName("Page should have title")
     void titlePageTest() {
         open("");
+        $(".lang-wrap").click();
         $(".title").shouldHave(text("Инвестиционная"));
     }
 
@@ -29,10 +30,9 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
-    @DisplayName("Page should change language")
+    @DisplayName("Page should have English text")
     void checkChangeLanguage() {
         open("");
-        $(".lang-wrap").click();
         $(".title").shouldHave(text(ConfigHelper.getText()));
     }
 }

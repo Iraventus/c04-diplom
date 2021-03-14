@@ -19,6 +19,7 @@ public class NewsPage extends TestBase {
     @DisplayName("Page news should be loaded")
     void checkNewsPage() {
         step("Open main page", () -> open(""));
+        step("Choose Russian language", () ->$(".lang-wrap").click());
         step("Click news", () -> $$(".menu-item").filterBy(text("Новости")).first().click());
         step ("Search text on the page", () -> $x(search).shouldBe(visible));
     }
@@ -27,6 +28,7 @@ public class NewsPage extends TestBase {
     @DisplayName("Page search news should be loaded")
     void searchNews() {
         open("/news");
+        $(".lang-wrap").click();
         $x(search).val("Компания Севергрупп, крупная инвестиционная компания");
         $(withText("В Санкт-Петербурге работают такие компании «Севергрупп» как «Силовые машины», «Лента», «Свеза», «Ава-Петер»")).shouldBe(visible);
     }
