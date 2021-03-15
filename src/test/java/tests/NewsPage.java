@@ -1,5 +1,7 @@
 package tests;
 
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -12,6 +14,7 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+@Feature("News page tests")
 public class NewsPage extends TestBase {
     private final String search = "//*[@placeholder='Поиск по новостям']";
 
@@ -34,6 +37,7 @@ public class NewsPage extends TestBase {
     }
 
     @Test
+    @Story("Console test")
     @DisplayName("Console log should not have any errors")
     void consoleLogShouldNotHaveErrors() {
         open("/news");
