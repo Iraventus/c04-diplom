@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.AllureId;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
@@ -28,6 +29,7 @@ public class NewsPage extends TestBase {
     }
 
     @Test
+    @AllureId("1922")
     @DisplayName("Page search news should be loaded")
     void searchNews() {
         open("/news");
