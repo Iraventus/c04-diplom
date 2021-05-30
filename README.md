@@ -51,3 +51,5 @@
 IntelliJ IDEA, Java, Selenide, Selenoid, Gradle, JUnit5, Allure SE, Allure TestOps, Github, Jenkins, Rest-Assured, Telegram (reports), Jira.
 
 ## :video_camera: Запись видео с помощью Selenoid
+
+![alt text](https://https://github.com/Iraventus/c04-diplom/blob/master/images/4a7e5600e26b5ef21c1613bb5d1fc158.gif "**Видео теста**")
