@@ -1,7 +1,7 @@
 package config;
 
 import org.aeonbits.owner.ConfigFactory;
-//qw
+
 public class ConfigHelper {
 
     public static String getUrl() {
