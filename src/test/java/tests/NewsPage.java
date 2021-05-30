@@ -20,14 +20,14 @@ import static org.hamcrest.MatcherAssert.assertThat;
 @Feature("News page tests")
 public class NewsPage extends TestBase {
 
-    SelenideElement searchField = $("[placeholder='Search by news']");
+    SelenideElement searchField = $("[placeholder='Поиск по новостям']");
 
     @Test
     @DisplayName("Page news should be loaded")
     void checkNewsPage() {
         step("Open main page", () -> open(""));
         step("Choose Russian language", () ->$(".lang-wrap").click());
-        step("Click news", () -> $$(".menu-item").filterBy(text("News")).first().click());
+        step("Click news", () -> $$(".menu-item").filterBy(text("Новости")).first().click());
         step ("Search text on the page", () -> searchField.shouldBe(visible));
     }
 
@@ -37,8 +37,8 @@ public class NewsPage extends TestBase {
     void searchNews() {
         open("/news");
         $(".lang-wrap").click();
-        searchField.val("Lenta (LSE and MOEX: LNTA)");
-        $(withText("Herman Tinga on the Board of Directors of Lenta")).shouldBe(visible);
+        $(searchField).val("Компания Севергрупп, крупная инвестиционная компания");
+        $(withText("В Санкт-Петербурге работают такие компании «Севергрупп» как «Силовые машины», «Лента», «Свеза», «Ава-Петер»")).shouldBe(visible);
     }
 
     @Test
