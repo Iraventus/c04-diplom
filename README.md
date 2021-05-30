@@ -1,4 +1,4 @@
-# Tests for http://demowebshop.tricentis.com/
+# Tests for https://severgroup.ru
 
 ## Scope:
 ### UI тесты для ресурса severgroup.ru
