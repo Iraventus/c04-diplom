@@ -55,7 +55,12 @@ IntelliJ IDEA, Java, Selenide, Selenoid, Gradle, JUnit5, Allure SE, Allure TestO
 ## :hammer_and_wrench: В качестве CI использован Jenkins
 ![alt text](https://github.com/Iraventus/c04-diplom/blob/master/images/Jenkins.png)
 
-## :bar_chart: Просмотр результатов теста с помощью Allure
+## :bar_chart: Отображение отчетов в Allure
 ![alt text](https://github.com/Iraventus/c04-diplom/blob/master/images/ATO.png)
 ![alt text](https://github.com/Iraventus/c04-diplom/blob/master/images/dashboard.png)
 
+## :information_source: Интеграция с Jira
+![alt text](https://github.com/Iraventus/c04-diplom/blob/master/images/Jira.png)
+
+## :envelope: Просмотр отчетов в телегам боте
+![alt text](https://github.com/Iraventus/c04-diplom/blob/master/images/tlg.png)
