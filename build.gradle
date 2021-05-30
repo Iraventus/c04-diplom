@@ -43,6 +43,7 @@ dependencies {
 tasks.withType(Test) {
     systemProperties += System.properties
     systemProperty("junit.jupiter.extensions.autodetection.enabled", "true")
+    System.setProperty("chromeoptions.prefs", "intl.accept_languages=en")
 
     if (System.getProperty("threads") != null) {
         systemProperties += [
