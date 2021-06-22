@@ -1,7 +1,6 @@
 package tests;
 
 import allureAnnotations.JiraIssue;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.AllureId;
 import io.qameta.allure.Feature;
@@ -40,7 +39,8 @@ public class NewsPage extends TestBase {
         open("/news");
         $(".lang-wrap").click();
         $(searchField).val("Компания Севергрупп, крупная инвестиционная компания");
-        $(withText("В Санкт-Петербурге работают такие компании «Севергрупп» как «Силовые машины», «Лента», «Свеза», «Ава-Петер»")).shouldBe(visible);
+        $(withText("В Санкт-Петербурге работают такие компании «Севергрупп»" +
+                " как «Силовые машины», «Лента», «Свеза», «Ава-Петер»")).shouldBe(visible);
     }
 
     @Test
